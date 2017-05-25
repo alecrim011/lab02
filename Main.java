@@ -36,9 +36,12 @@ public class Main {
 		System.out.println(opcaoString);
 	}
 	
-	public void cadastro(){
+	public void cadastro()throws Exception{
 		System.out.println("posicao: ");
 		int posicao = scanner.nextInt();
+		if (posicao > 100 || posicao < 0){
+			throw new Exception("POSICAO INVALIDA");
+		}
 		System.out.println("nome: ");
 		String nome = scanner.nextLine();
 		System.out.println("sobrenome: ");
