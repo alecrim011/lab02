@@ -29,6 +29,7 @@ public class Main {
 		     break;
 		}
 		if (opcaoString.equals("C")){
+			cadastra();
 			
 		}
 		
@@ -36,7 +37,7 @@ public class Main {
 		System.out.println(opcaoString);
 	}
 	
-	public void cadastro()throws Exception{
+	public void  cadastra()throws Exception{
 		System.out.println("posicao: ");
 		int posicao = scanner.nextInt();
 		if (posicao > 100 || posicao < 0){
