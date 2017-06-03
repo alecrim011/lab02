@@ -1,4 +1,4 @@
-package lab02;
+
 
 public class Contato {
 	private String nome;
@@ -33,6 +33,13 @@ public class Contato {
 
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
+	}
+	
+	
+
+	@Override
+	public String toString() {
+		return this.nome + " " + this.sobrenome + " - " + this.telefone;
 	}
 
 	@Override
